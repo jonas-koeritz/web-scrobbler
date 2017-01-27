@@ -122,13 +122,7 @@ define([
 			var max = 4 * 60; // really long tracks are scrobbled after 4 minutes
 			var val = Math.max(this.getDuration() / 2, DEFAULT_SCROBBLE_TIME);
 
-			var secondsToScrobble = Math.min(val, max); // whatever occurs first
-
-			if(connector.delayScrobblingSeconds) {
-				secondsToScrobble += connector.delayScrobblingSeconds;
-			}
-
-			return secondsToScrobble;
+			return Math.min(val, max); // whatever occurs first
 		};
 
 		/**

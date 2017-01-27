@@ -30,6 +30,12 @@
 define(function() {
 	return [
         {
+            label: 'Radio Hamburg',
+            matches: ['*://webradio.radiohamburg.de/*'],
+            js: ['connectors/v2/radiohh.js'],
+            version: 2
+        },
+        {
             label: 'R.SH',
             matches: ['*://www.rsh.de/*'],
             js: ['connectors/v2/rsh.js'],
