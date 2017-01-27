@@ -29,6 +29,12 @@
  */
 define(function() {
 	return [
+        {
+            label: 'R.SH',
+            matches: ['*://www.rsh.de/*'],
+            js: ['connectors/v2/rsh.js'],
+            version: 2
+        },
 		{
 			label: 'delta radio',
 			matches: ['*://livestream.deltaradio.de/*'],
